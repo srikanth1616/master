@@ -16,7 +16,7 @@ export class InfraStack extends cdk.Stack {
 });
 
 globalTable.autoScaleWriteCapacity({
-  minCapacity: 1,
+  minCapacity: 2,
   maxCapacity: 10,
 }).scaleOnUtilization({ targetUtilizationPercent: 75 });
     // example resource
